@@ -1,0 +1,516 @@
+<!--
+    Autores = Celia Alonso, Raul Marin, Ricardo Salido, David Gomez
+    Fecha = 1/12/2015
+    Licencia = GPL v3
+    Versión = 1.0
+    Descripción = Tienda de Buscando a Nemo
+
+    Copyright (C) 2015  David Gómez Quilón
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUSCANDO A NEMO | Tienda online</title>
+
+    <!-- ===========================
+        FAVICON
+        =========================== -->
+    <link rel="icon" href="img/logo_negro.png" type="image/gif"/>
+
+    <!-- ===========================
+        FUENTES
+        =========================== -->
+    <link href='libs/font-awesome/css/font-awesome.min.css' rel='stylesheet'>
+    <!-- ===========================
+        ARCHIVOS CSS
+        =========================== -->
+    <link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/tienda.css">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+
+    <!--[if IE]>
+    <script src="libs/ie/html5shiv.min.js"></script>
+    <script src="libs/ie/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<div class="alert alert-cookies alert-dismissible" role="alert">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    Este sitio web utiliza cookies, si continua navegando por el sitio da por hecho que ha sido debidamente informado y que acepta que hagamos uso de ellas.
+    Puede consultar la política de cookie de <strong>Buscando a Nemo desde</strong> <a href="politica_C.html">aquí</a>.
+</div>
+
+<div id="wrapper">
+    <!-- ===========================
+   HEADER
+   =========================== -->
+    <header>
+        <div class="container header">
+            <div class="row header">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <a href="index.html" class="go-to-index"><p class="logo">
+                        <img src="img/logo_negro.png" alt="Logo cabecera Buscando A Nemo">
+                        <strong>BUSCANDO</strong> A NEMO
+                    </p></a>
+                </div>
+                <div class="col-lg-6 col-sm-6">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <p class="welcome right" id="welcome"></p>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <a href="registro.html" class="btn btn-iniciar right">Regístrate</a>
+                        <a href="login.html" class="btn btn-iniciar right">Accede a tu cuenta</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+            </div>
+        </div>
+    </header>
+
+
+    <!-- ===========================
+   NAV
+   =========================== -->
+    <div class="navbar-container">
+        <nav class="navbar navbar-default">
+            <div class="container navigation">
+                <a class="go-to-index"><p class="nav-logo left">
+                    <img src="img/logo_negro.png" alt="Logo Buscando A Nemo">
+                    <strong>BUSCANDO</strong> A NEMO
+                </p></a>
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>HOME</a></li>
+                        <li><a href="hacemosyofrecemos.html"><i class="fa fa-info" aria-hidden="true"></i>INFORMACIÓN</a></li>
+                        <li class="active"><a href="tienda.html"><i class="fa fa-shopping-basket" aria-hidden="true"></i>TIENDA</a></li>
+                        <li><a href="galeria.html"><i class="fa fa-picture-o" aria-hidden="true"></i>GALERÍA</a></li>
+                        <li><a href="contacto.html"><i class="fa fa-envelope" aria-hidden="true"></i>CONTACTO</a></li>
+                        <li class="item-search">
+                            <form class="navbar-form">
+                                <div class="input-group">
+                                    <label for="search" aria-hidden="true" title="Busqueda">
+                                        <span class="sr-only">Busqueda</span>
+                                    </label>
+                                    <div class="input-group-btn">
+                                        <input type="text" class="form-control" id="search" placeholder="Busqueda">
+                                        <button class="btn btn-default btn-search" type="submit" aria-hidden="true" title="Buscar">
+                                            <span class="sr-only">Buscar</span>
+                                            <i class="glyphicon glyphicon-search" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- ===========================
+    SUBMENU
+    =========================== -->
+    <div class="sub-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 bread-crumb">
+                    <h1>Tienda online</h1>
+                    <p>
+                        <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>Buscando a Nemo</a>
+                        <i class="fa fa-angle-right"></i>
+                        <i class="fa fa-shopping-basket" aria-hidden="true"></i><strong>Tienda</strong>
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 subheader-img wow fadeInRight">
+                    <img src="img/pez1_subheader.png" alt="Pez tropical">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===========================
+    TIENDA
+    =========================== -->
+    <main>
+        <div class="container shop">
+            <div class="row intro">
+                <div class="col-md-12">
+                    <h2>¿Qué necesitas?</h2>
+                    <p>
+                        Aquí puedes comprar todo lo que necesites para tu aquario. Desde plantas, sistemas automaticos, especies...<br>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-3 filter">
+                    <div class="row categories border-box">
+                        <div class="head">
+                            <i class="fa fa-bars"></i>CATEGORÍAS MAS BUSCADAS
+                        </div>
+                        <a href="#">
+                            <div class="category">
+                                <i class="fa fa-bug" aria-hidden="true"></i> TROPICALES <i class="fa fa-arrow-circle-right"></i>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="category">
+                                <i class="fa fa-bug" aria-hidden="true"></i> AGUA CALIENTE <i class="fa fa-arrow-circle-right"></i>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="category">
+                                <i class="fa fa-cubes" aria-hidden="true"></i> AGUA FRIA <i class="fa fa-arrow-circle-right"></i>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="category">
+                                <i class="fa fa-tree" aria-hidden="true"></i> PLANTAS <i class="fa fa-arrow-circle-right"></i>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="category">
+                                <i class="fa fa-globe" aria-hidden="true"></i> PECERAS <i class="fa fa-arrow-circle-right"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="row search">
+                        <h3><i class="fa fa-search" aria-hidden="true"></i>BUSQUEDA</h3>
+                        <hr>
+                        <label class="sr-only" for="busquedapez">Busqueda de la tienda</label>
+                        <input type="text" id="busquedapez" placeholder="Pez globo...">
+                    </div>
+                    <div class="row shop-by">
+                        <h3><i class="fa fa-cogs" aria-hidden="true"></i>FILTROS AVANZADOS</h3>
+                        <hr>
+                        <div class="by-cat">
+                            <div class="shop-by-cat dropdown-toggle " data-toggle="dropdown">
+                                <a href="#">
+                                    Peces de aquario
+                                    <i class="fa fa-plus-square-o" aria-hidden="true"></i>
+                                    <i class="fa fa-minus-square-o" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <input type="checkbox" id="discos">
+                                    <label for="discos">Discos</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="fria">
+                                    <label for="fria">Agua fria</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="by-cat">
+                            <div class="shop-by-cat dropdown-toggle " data-toggle="dropdown">
+                                <a href="#">
+                                    Peces tropicales
+                                    <i class="fa fa-plus-square-o" aria-hidden="true"></i>
+                                    <i class="fa fa-minus-square-o" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <input type="checkbox" id="anabantidos">
+                                    <label for="anabantidos">Anabántidos</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="defondo">
+                                    <label for="defondo">De fondo</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="ciclidos">
+                                    <label for="ciclidos">Ciclidos</label>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <button class="btn btn-block btn-filter">Aplicar filtros</button>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-9 col-sm-9">
+                    <hr class="hr-mobile">
+                    <div class="row banner-oferta wow flipInY">
+                        <img src="img/tienda/banner_ofertas.jpg" alt="Oferta 50% en acuarios y plantas">
+                        <h2>OFERTA 50%</h2>
+                        <span>En acuarios y plantas</span>
+                    </div>
+                    <div class="row products">
+                        <div class="col-lg-3 col-md-3 col-sm-4">
+                            <a href="#" class="products-mode"><i class="fa fa-th"></i> Cuadricula</a>
+                            <a href="#" class="products-mode"><i class="fa fa-th-list"></i> Lista</a>
+                        </div>
+                        <div class="col-lg-5 col-md-5 col-sm-4">
+                            <div class="btn-group">
+                                <button class="btn btn-default btn-sm dropdown-toggle"
+                                        type="button" data-toggle="dropdown">
+                                    Ordenar... <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Mas vendidos</a></li>
+                                    <li><a href="#">Precio ascendente</a></li>
+                                    <li><a href="#">Precio descendente</a></li>
+                                </ul>
+                            </div>
+                            <div class="btn-group">
+                                <button class="btn btn-default btn-sm dropdown-toggle"
+                                        type="button" data-toggle="dropdown">
+                                    Mostrar... <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">5</a></li>
+                                    <li><a href="#">10</a></li>
+                                    <li><a href="#">20</a></li>
+                                    <li><a href="#">40</a></li>
+                                    <li><a href="#">60</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                            <ul class="pagination">
+                                <li><a href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i><span class="sr-only">Paso atras</span></a></li>
+                                <li class="active"><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li><a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i><span class="sr-only">Paso adelante</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr>
+                    <!-- ===========================
+                    PRODUCTOS EN REJILLA
+                    =========================== -->
+                    <div class="row prod-grid">
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 product-item wow fadeIn">
+                            <img src="img/tienda/product1.jpg" alt="Pez payaso 1">
+                            <h3>Pez 1</h3>
+                            <p class="category-product">Categoría 1</p>
+                            <p class="stars">
+                                <i class="fa fa-star star-active"></i>
+                                <i class="fa fa-star star-active"></i>
+                                <i class="fa fa-star star-active"></i>
+                                <i class="fa fa-star star-unactive"></i>
+                                <i class="fa fa-star star-unactive"></i>
+                            </p>
+                            <p>
+                                <span class="price-after">660 €</span>
+                                <span class="price-before">960 €</span>
+                            </p>
+                            <div class="btn btn-cart">
+                                <i class="fa fa-shopping-cart"></i> Añadir al carrito
+                            </div>
+                            <div class="btn btn-cart-mobile">
+                                <i class="fa fa-shopping-cart"></i>
+                            </div>
+                            <div class="btn btn-wishlist">
+                                <i class="fa fa-heart"></i>
+                            </div>
+                            <div class="btn btn-share">
+                                <i class="fa fa-share-alt"></i>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 product-item wow fadeIn">
+                            <img src="img/tienda/product1.jpg" alt="Pez payaso 2">
+                            <h3>Pez 1</h3>
+                            <p class="category-product">Categoría 1</p>
+                            <p class="stars">
+                                <i class="fa fa-star star-active"></i>
+                                <i class="fa fa-star star-active"></i>
+                                <i class="fa fa-star star-active"></i>
+                                <i class="fa fa-star star-unactive"></i>
+                                <i class="fa fa-star star-unactive"></i>
+                            </p>
+                            <p>
+                                <span class="price-after">660 €</span>
+                                <span class="price-before">960 €</span>
+                            </p>
+                            <div class="btn btn-cart">
+                                <i class="fa fa-shopping-cart"></i> Añadir al carrito
+                            </div>
+                            <div class="btn btn-cart-mobile">
+                                <i class="fa fa-shopping-cart"></i>
+                            </div>
+                            <div class="btn btn-wishlist">
+                                <i class="fa fa-heart"></i>
+                            </div>
+                            <div class="btn btn-share">
+                                <i class="fa fa-share-alt"></i>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 product-item wow fadeIn">
+                            <img src="img/tienda/product1.jpg" alt="Pez payaso 3">
+                            <h3>Pez 1</h3>
+                            <p class="category-product">Categoría 1</p>
+                            <p class="stars">
+                                <i class="fa fa-star star-active"></i>
+                                <i class="fa fa-star star-active"></i>
+                                <i class="fa fa-star star-active"></i>
+                                <i class="fa fa-star star-unactive"></i>
+                                <i class="fa fa-star star-unactive"></i>
+                            </p>
+                            <p>
+                                <span class="price-after">660 €</span>
+                                <span class="price-before">960 €</span>
+                            </p>
+                            <div class="btn btn-cart">
+                                <i class="fa fa-shopping-cart"></i> Añadir al carrito
+                            </div>
+                            <div class="btn btn-cart-mobile">
+                                <i class="fa fa-shopping-cart"></i>
+                            </div>
+                            <div class="btn btn-wishlist">
+                                <i class="fa fa-heart"></i>
+                            </div>
+                            <div class="btn btn-share">
+                                <i class="fa fa-share-alt"></i>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 product-item wow fadeIn">
+                            <img src="img/tienda/product1.jpg" alt="Pez payaso 4">
+                            <h3>Pez 1</h3>
+                            <p class="category-product">Categoría 1</p>
+                            <p class="stars">
+                                <i class="fa fa-star star-active"></i>
+                                <i class="fa fa-star star-active"></i>
+                                <i class="fa fa-star star-active"></i>
+                                <i class="fa fa-star star-unactive"></i>
+                                <i class="fa fa-star star-unactive"></i>
+                            </p>
+                            <p>
+                                <span class="price-after">660 €</span>
+                                <span class="price-before">960 €</span>
+                            </p>
+                            <div class="btn btn-cart">
+                                <i class="fa fa-shopping-cart"></i> Añadir al carrito
+                            </div>
+                            <div class="btn btn-cart-mobile">
+                                <i class="fa fa-shopping-cart"></i>
+                            </div>
+                            <div class="btn btn-wishlist">
+                                <i class="fa fa-heart"></i>
+                            </div>
+                            <div class="btn btn-share">
+                                <i class="fa fa-share-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <ul class="pagination right">
+                            <li><a href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i><span class="sr-only">Paso atras</span></a></li>
+                            <li class="active"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i><span class="sr-only">Paso adelante</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- ===========================
+    FOOTER
+    =========================== -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 logo">
+                    <a href="#">
+                        <p>
+                            <img src="img/logo.png" alt="Logo Buscando A Nemo">
+                            <strong>BUSCANDO</strong> A NEMO
+                        </p>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 footer-enlaces">
+                    <!--<a onclick="abrirLicencia()">Términos de licencia</a> |
+                    <a href="contacto.html">Contacte con nosotros</a> |
+                    <a href="#">Tienda</a>-->
+                    <h5>Interes</h5>
+                    <ul>
+                        <li><i class="fa fa-certificate"></i><a onclick="abrirLicencia()">Términos de licencia</a></li>
+                        <li><i class="fa fa-envelope" aria-hidden="true"></i><a href="contacto.html">Contacte con nosotros</a></li>
+                        <li><i class="fa fa-envelope" aria-hidden="true"></i><a onclick="abrirMapaWeb()">Mapa web</a></li>
+                        <li><i class="fa fa-envelope" aria-hidden="true"></i><a onclick="abrirPoliticaC()">Política de cookies</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-md-4 col-sm-4 footer-contacto">
+                    <h5>Contacto</h5>
+                    <ul>
+                        <li><i class="fa fa-map-marker"></i>Dirección: <b>Calle Piruleta Nª 123. Madrid, España.</b>
+                        </li>
+                        <li><i class="fa fa-phone"></i>Telf: <b>+34 9183475863</b></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="row copyright">
+                <p>
+                    <b>Página Web diseñada por:</b> Celia Alonso, Raúl Marín, Ricardo Salido y David Gómez para <b>BUSCANDO
+                    A NEMO</b>. Bajo la licencia <b>GPL</b>
+                </p>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<!-- ===========================
+SCRIPTS NECESARIOS
+=========================== -->
+<script src="libs/jquery/jquery.min.js"></script>
+<script src="libs/bootstrap/bootstrap.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/cookies.js"></script>
+<script src="js/licencia.js"></script>
+<script src="js/mapaWeb.js"></script>
+<script src="js/navbar.js"></script>
+<script src="js/politica_Cokiees.js"></script>
+<script>
+    new WOW().init();
+</script>
+
+<script>
+
+    $('.dropdown-toggle').click(function () {
+        $(this).next('.dropdown-menu').slideToggle(200);
+    });
+</script>
+
+</body>
+</html>

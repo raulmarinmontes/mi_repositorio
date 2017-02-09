@@ -1,0 +1,382 @@
+<!--
+    Autores = Celia Alonso, Raul Marin, Ricardo Salido, David Gomez
+    Fecha = 1/12/2015
+    Licencia = GPL v3
+    Versión = 1.0
+    Descripción = HOME de Buscando a Nemo
+
+    Copyright (C) 2015  David Gómez Quilón
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUSCANDO A NEMO | Inicio</title>
+
+    <!-- ===========================
+        FAVICON
+        =========================== -->
+    <link rel="icon" href="img/logo_negro.png" type="image/gif"/>
+
+    <!-- ===========================
+        FUENTES
+        =========================== -->
+    <link href='libs/font-awesome/css/font-awesome.min.css' rel='stylesheet'>
+    <!-- ===========================
+        ARCHIVOS CSS
+        =========================== -->
+    <link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+
+    <!--[if IE]>
+    <script src="libs/ie/html5shiv.min.js"></script>
+    <script src="libs/ie/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<div class="alert alert-cookies alert-dismissible" role="alert">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    Este sitio web utiliza cookies, si continua navegando por el sitio da por hecho que ha sido debidamente informado y que acepta que hagamos uso de ellas.
+    Puede consultar la política de cookie de <strong>Buscando a Nemo desde</strong> <a href="politica_C.html">aquí</a>.
+</div>
+
+<div id="wrapper">
+    <!-- ===========================
+   HEADER
+   =========================== -->
+    <header>
+        <div class="container header">
+            <div class="row header">
+                <div class="col-lg-6 col-sm-6 wow bounceInDown">
+                    <a href="index.html" class="go-to-index"><p class="logo">
+                        <img src="img/logo_negro.png" alt="Logo de Buscando a Nemo en la cabecera de la página.">
+                        <strong>BUSCANDO</strong> A NEMO
+                    </p></a>
+                </div>
+                <div class="col-lg-6 col-sm-6 wow bounceInDown">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <p class="welcome right" id="welcome"></p>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <a href="registro.html" class="btn btn-iniciar right">Regístrate</a>
+                        <a href="login.html" class="btn btn-iniciar right">Accede a tu cuenta</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+            </div>
+        </div>
+    </header>
+
+
+    <!-- ===========================
+   NAV
+   =========================== -->
+    <div class="navbar-container">
+        <nav class="navbar navbar-default">
+            <div class="container navigation">
+                <a class="go-to-index"><p class="nav-logo left">
+                    <img src="img/logo_negro.png" alt="Logo Buscando a Nemo de la barra de navegación" aria-hidden="true">
+                    <strong>BUSCANDO</strong> A NEMO
+                </p></a>
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>HOME</a></li>
+                        <li><a href="hacemosyofrecemos.html"><i class="fa fa-info" aria-hidden="true"></i>INFORMACIÓN</a></li>
+                        <li><a href="tienda.html"><i class="fa fa-shopping-basket" aria-hidden="true"></i>TIENDA</a></li>
+                        <li><a href="galeria.html"><i class="fa fa-picture-o" aria-hidden="true"></i>GALERÍA</a></li>
+                        <li><a href="contacto.html"><i class="fa fa-envelope" aria-hidden="true"></i>CONTACTO</a></li>
+                        <li class="item-search">
+                            <form class="navbar-form">
+                                <div class="input-group">
+                                    <label for="search" aria-hidden="true" title="Busqueda">
+                                        <span class="sr-only">Busqueda</span>
+                                    </label>
+                                    <div class="input-group-btn">
+                                    <input type="text" class="form-control" id="search" placeholder="Busqueda">
+                                        <button class="btn btn-default btn-search" type="submit" aria-hidden="true" title="Buscar">
+                                            <span class="sr-only">Buscar</span>
+                                            <i class="glyphicon glyphicon-search" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- ===========================
+    SLIDER
+    =========================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicadores -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="" aria-hidden="true"></li>
+            <li data-target="#myCarousel" data-slide-to="1" class="active" aria-hidden="true"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="item">
+                <div class="text">
+                    <h1>Eres<br>
+                        amante de las cosas<br>
+                        raras</h1>
+                    <p>Tenemos especies que jamas has visto en
+                        otro sitio, acercate en persona y consulta la tienda online.</p>
+
+                    <button onclick="window.location.href='tienda.html'; return false;" class="btn btn-default">Visita
+                        la tienda
+                    </button>
+                </div>
+                <img class="first-slide" src="img/peces2.jpg" alt="Imagen de especies raras">
+            </div>
+            <div class="item active">
+                <div class="text">
+                    <h1>Las mejores<br>
+                        especies<br>
+                        tropicales</h1>
+                    <p>Aqui en Buscando a NEMO disponemos de las
+                        mejores especies tropicales que podras encontrar.</p>
+
+                    <button onclick="window.location.href='tienda.html'; return false;" class="btn btn-default">Visita
+                        la tienda
+                    </button>
+                </div>
+                <img class="second-slide" src="img/peces1.jpg" alt="Imagen de peces tropicales">
+            </div>
+        </div>
+
+        <a class="left carousel-control control-slider" href="#myCarousel" role="button"
+           data-slide="prev"> <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="right carousel-control control-slider" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only" style="z-index: 99;">Siguiente</span>
+        </a>
+    </div>
+
+    <!-- ===========================
+    CONTENIDO
+    =========================== -->
+    <main>
+        <div class="container columns">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 column">
+                    <a href="hacemosyofrecemos.html?accion=venta" title="Enlace a la variedad de especies.">
+                        <span class="sr-only">Enlace a la variedad de especies</span>
+                        <i class="fa fa-bug fa-5x item" aria-hidden="true"></i>
+                    </a>
+
+                    <h2>Variedad de especies</h2>
+
+                    <p>
+                        Contamos con gran número de especies tanto tropicales como
+                        marinas de los mejores criaderos
+                    </p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 column">
+                    <a href="hacemosyofrecemos.html?accion=mantenimiento" title="Enlace a la información del mantenimiento.">
+                        <span class="sr-only">Enlace a la información del mantenimiento</span>
+                        <i class="fa fa-users fa-5x item" aria-hidden="true"></i>
+                    </a>
+
+                    <h2>Nos encargamos de todo</h2>
+
+                    <p>
+                        Diseño, montaje, puesta en marcha, introducción de animales
+                        y mantenimiento posterior, garantizando así el mejor resultado con
+                        su acuario.
+                    </p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 column">
+                    <a href="hacemosyofrecemos.html?accion=servicio" title="Enlace a la información del servicio a domicilio.">
+                        <span class="sr-only">Enlace a la información del servicio a domicilio</span>
+                        <i class="fa fa-truck fa-5x item" aria-hidden="true"></i>
+                    </a>
+
+                    <h2>Servicio a domicilio</h2>
+
+                    <p>
+                        Enviamos nuestros productos en la mejores condiciones por
+                        toda la región peninsular
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 description">
+                        <h3>Especialistas en Acuariofília</h3>
+
+                        <p>
+                            En Buscando a Nemo contamos con el mejor asesoramiento,
+                            hacemos posible cualquier acuario, instalación y diseño tanto de
+                            agua dulce como de agua salada.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <iframe src="https://www.youtube.com/embed/m0933llkFoQ" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="publicidad">
+            <div class="container">
+                <div class="row">
+                    <h4>Espacio publicitario para nuestros colaboradores</h4>
+                    <p>
+                        Gracias a nuestros colaboradores podemos ofrecerte un mejor servicio, asi que echale un vistazo
+                        a sus ofertas.<br>
+                        Podrás disfrutar de numerosos productos y actividades en compañía de quien quieras.
+                    </p>
+                </div>
+                <div class="row colab">
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 colab-item wow tada" data-wow-duration="4s">
+                        <div class="colab-item-cont border-box">
+                            <div class="wow fadeIn">
+                                <div class="wow pulse infinite" data-wow-duration="3s">
+                                    <img src="img/publi_1.png" alt="Logo Zoo Aquarium de Madrid"/>
+                                </div>
+                            </div>
+                            <h5>Zoo Aquarium</h5>
+                            <p>Ven al Zoo Aquarium de Madrid y disfruta de un 50% de descuento en niños y un 25% en
+                                adultos si compras tu entrada
+                                desde <b>BUSCANDO A NEMO</b></p>
+                            <button class="btn btn-success">La compro ¡YA!</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 colab-item wow bounce" data-wow-duration="4s">
+                        <div class="colab-item-cont border-box">
+                            <div class="wow fadeIn">
+                                <div class="wow tada infinite" data-wow-duration="5s">
+                                    <img src="img/publi_2.png" alt="Logo Faunia"/>
+                                </div>
+                            </div>
+                            <h5>Faunia</h5>
+                            <p>En <b>BUSCANDO A NEMO</b> somos amantes de todo tipo de animales, por eso disfruta de un
+                                80% de descuento si imprimes
+                                el cupón desde aquí, para toda tu familia.</p>
+                            <button class="btn btn-success">Vamos a imprimir</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 colab-item wow wobble" data-wow-duration="4s">
+                        <div class="colab-item-cont border-box">
+                            <div class="wow fadeIn">
+                                <div class="wow pulse infinite" data-wow-duration="3s">
+                                    <img src="img/publi_3.png" alt="Logo Oceanográfic"/>
+                                </div>
+                            </div>
+                            <h5>Oceanogràfic</h5>
+                            <p>Participa en el sorteo de un viaje con todos los gastos pagados y entrada gratuita para 4
+                                personas al Oceanogràfic de
+                                Valencia. Compartelo con quien quieras.</p>
+                            <button class="btn btn-success">Yo lo echo por si toca</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- ===========================
+    FOOTER
+    =========================== -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 logo">
+                    <a href="#">
+                        <p>
+                            <img src="img/logo.png" alt="Logo Buscando a Nemo en el pie de la página.">
+                            <strong>BUSCANDO</strong> A NEMO
+                        </p>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 footer-enlaces">
+                    <!--<a onclick="abrirLicencia()">Términos de licencia</a> |
+                    <a href="contacto.html">Contacte con nosotros</a> |
+                    <a href="#">Tienda</a>-->
+                    <h5>Interes</h5>
+                    <ul>
+                        <li><i class="fa fa-certificate"></i><a onclick="abrirLicencia()">Términos de licencia</a></li>
+                        <li><i class="fa fa-envelope" aria-hidden="true"></i><a href="contacto.html">Contacte con nosotros</a></li>
+                        <li><i class="fa fa-envelope" aria-hidden="true"></i><a onclick="abrirMapaWeb()">Mapa web</a></li>
+                        <li><i class="fa fa-envelope" aria-hidden="true"></i><a onclick="abrirPoliticaC()">Política de cookies</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-md-4 col-sm-4 footer-contacto">
+                    <h5>Contacto</h5>
+                    <ul>
+                        <li><i class="fa fa-map-marker"></i>Dirección: <b>Calle Piruleta Nª 123. Madrid, España.</b>
+                        </li>
+                        <li><i class="fa fa-phone"></i>Telf: <b>+34 9183475863</b></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="row copyright">
+                <p>
+                    <b>Página Web diseñada por:</b> Celia Alonso, Raúl Marín, Ricardo Salido y David Gómez para <b>BUSCANDO
+                    A NEMO</b>. Bajo la licencia <b>GPL</b>
+                </p>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<!-- ===========================
+SCRIPTS NECESARIOS
+=========================== -->
+<script src="libs/jquery/jquery.min.js"></script>
+<script src="libs/bootstrap/bootstrap.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/cookies.js"></script>
+<script src="js/licencia.js"></script>
+<script src="js/mapaWeb.js"></script>
+<script src="js/politica_Cokiees.js"></script>
+<script src="js/navbar.js"></script>
+<script>
+    new WOW().init();
+</script>
+
+</body>
+</html>

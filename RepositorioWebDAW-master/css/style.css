@@ -1,0 +1,515 @@
+/*
+ *    Autor = Celia Alonso, Raul Marin, Ricardo Salido, David Gomez
+ *    Fecha = 10/12/2015
+ *    Licencia = GPL v3
+ *    Versión = 1.0
+ *    Descripción = Definiciones CSS
+ *
+ *    Copyright (C) 2015 Buscando a Nemo
+ *
+ *    This program is free software: you can redistribute it and/or modify
+ *    it under the terms of the GNU General Public License as published by
+ *    the Free Software Foundation, either version 3 of the License, or
+ *    (at your option) any later version.
+ *
+ *    This program is distributed in the hope that it will be useful,
+ *    but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *    GNU General Public License for more details.
+ *
+ *    You should have received a copy of the GNU General Public License
+ *    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+/*div {
+    border: 1px dotted red;
+}
+
+/* ---------------------
+FUENTES
+--------------------- */
+@font-face {
+	font-family: 'Helvetica 35';
+	src: url(../fonts/35.woff);
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'Helvetica 45';
+	src: url(../fonts/45.woff);
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'Helvetica 55';
+	src: url(../fonts/55.woff);
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'Helvetica 65';
+	src: url(../fonts/65.woff);
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'Helvetica 75';
+	src: url(../fonts/75.woff);
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'Raleway';
+	src: url(../fonts/raleway-light-webfont.woff);
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'Raleway';
+	src: url(../fonts/raleway-extrabold-webfont.woff);
+	font-weight: bold;
+}
+/* ---------------------
+VARIOS
+--------------------- */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+	font-family: 'Helvetica 45', sans-serif;
+    height: 100%;
+	color: #474747;
+	-webkit-font-smoothing: antialiased;
+}
+
+h1 {
+	font: normal normal normal 70px/1.4em 'Helvetica 35', sans-serif;
+}
+
+h2 {
+	font: normal normal normal 60px/1.4em 'Helvetica 35', sans-serif;
+}
+
+h3 {
+	font: normal normal normal 50px/1.4em 'Helvetica 35', sans-serif;
+}
+
+h4 {
+	font: normal normal normal 40px/1.4em 'Helvetica 35', sans-serif;
+}
+
+h5 {
+	font: normal normal normal 30px/1.4em 'Helvetica 35', sans-serif;
+}
+
+p {
+	font: normal normal normal 18px/1.4em 'Helvetica 45', sans-serif;
+}
+
+label { font-family: 'Helvetica 55', sans-serif }
+b { font-family: 'Helvetica 65', sans-serif }
+strong { font-family: 'Helvetica 75', sans-serif }
+hr { border-top: 1px solid #D4D4D4; }
+
+/* Arreglo para la animación en Firefox */
+.animation-moz-fix {
+    display: inline-flex;
+}
+
+/* Clases de uso general en cualquier html */
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.border-box {
+	border-color: #ccc;
+	border-radius: 4px;
+	-webkit-box-shadow: 0px 2px 3px 2px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 2px 3px 2px rgba(0,0,0,0.2);
+	box-shadow: 0px 2px 3px 2px rgba(0,0,0,0.2);
+}
+
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0;
+}
+
+.alert-cookies {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding: 30px 100px;
+	z-index: 99999;
+	color: #FFFFFF;
+	background-color: rgba(0, 0, 0, 0.8);
+	border: none;
+	border-radius: 0;
+}
+.alert-cookies a {
+	text-transform: uppercase;
+	color: white;
+	text-decoration: none;
+	border-bottom: 1px dotted white;
+}
+.alert-cookies a:hover {
+	text-decoration: none;
+	border-bottom: 1px solid white;
+}
+
+/* --------------------- 
+HEADER
+--------------------- */
+#wrapper {
+	min-height: 100%;
+	position: relative;
+}
+
+header {
+	font-family: 'Raleway', sans-serif;
+	width: 100%;
+	background-color: white;
+}
+
+header p {
+	color: white;
+}
+
+.header {
+	padding: 10px;
+	width: 100%;
+}
+
+header div .header {
+	padding: 0 15vw 0 15vw;
+	color: #474747;
+}
+
+header div .header p {
+	font-size: 2vw;
+	color: #474747;
+}
+
+header div .header img { height: 80px }
+
+.go-to-index {
+	color: #474747;
+	text-decoration: none;
+}
+
+.go-to-index:visited {
+	color: #474747;
+	text-decoration: none;
+}
+.go-to-index:hover {
+	color: #474747;
+	text-decoration: none;
+}
+
+#bg_pattern {
+	background-image: url(../img/bg_pattern.png);
+	position: absolute;
+	opacity: 0.8;
+	left: 0;
+	top: 60px;
+	width: 100%;
+	height: 40vw;
+	z-index: 1;
+}
+
+.welcome {
+	font-family: 'Helvetica 55', sans-serif;
+	font-size: 15px !important;
+	margin-right: 10px;
+}
+
+.btn {
+	margin: 5px 10px;
+	color: #267ac1;
+	font-size: 15px;
+	font-family: 'Helvetica 45', sans-serif;
+	font-weight: normal;
+	padding: 5px 5px 5px 5px;
+	border: solid #267ac1 1px;
+	text-decoration: none;
+}
+
+.btn-iniciar {
+	color: #ffffff;
+	border: solid #267ac2 1px;
+	background-color: #267ac1;
+	font-family: 'Helvetica 65', sans-serif;
+
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	-moz-transition: all 0.3s ease-in-out 0s;
+	-o-transition: all 0.3s ease-in-out 0s;
+	-ms-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;
+}
+
+.btn-iniciar:hover {
+	color: #2d6bad;
+	background-color: white;
+
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	-moz-transition: all 0.3s ease-in-out 0s;
+	-o-transition: all 0.3s ease-in-out 0s;
+	-ms-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;
+}
+
+.btn-search {
+	position: absolute !important;
+	margin: 0;
+	color: #333;
+	background-color: #fff;
+	border-color: #ccc
+}
+
+.btn-search .glyphicon-search {
+	padding: 3px 5px 0;
+}
+
+#search {
+	border-top-left-radius: 4px !important;
+	border-bottom-left-radius: 4px !important;
+}
+
+/* ---------------------
+SUB HEADER
+ -------------------- */
+
+.sub-header {
+	background-color: #267ac1;
+	color: white;
+	width: 100%;
+	height: 120px;
+	overflow: hidden;
+}
+.sub-header img { height: 120px;  bottom: 300px; overflow: hidden; }
+.bread-crumb { padding: 10px 10px 10px }
+.bread-crumb p { font-size: 16px; letter-spacing: 0px }
+.bread-crumb h1 { font-size: 30px; font-weight: bold; letter-spacing: 1px }
+.bread-crumb .fa-angle-right { padding: 0 5px 0 5px}
+.bread-crumb a {
+	color: white;
+	text-decoration: none;
+}
+.bread-crumb a:focus,
+.bread-crumb a:visited,
+.bread-crumb a:hover {
+	color: white;
+	text-decoration: underline;
+}
+
+/* ---------------------
+NAV
+--------------------- */
+
+nav {
+	font-size: 15px;
+	font-weight: 600;
+}
+.navigation { width: 100%; }
+.item-search { width: 20%; }
+.nav-logo { display: none; padding-top: 10px }
+.nav-logo img { height: 30px }
+.f-nav { z-index: 9999; position: fixed; left: 0; top: 0; width: 100%; }
+.navbar-container {
+	background-color: rgba(255, 255, 255, 0.75)
+}
+
+nav a {
+	color: #3b3b3b;
+}
+
+i {padding-right: 10px }
+
+.navbar-default, .dropdown-toggle, .dropdown-menu { background: none; border: none; }
+.navbar-default .navbar-nav > li > a { color: #474747 }
+.navbar-default .navbar-nav > li > a:visited {
+	color: #797979;
+}
+.navbar-default .navbar-nav > li > a:hover {
+	color: #267ac1;
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	-moz-transition: all 0.3s ease-in-out 0s;
+	-o-transition: all 0.3s ease-in-out 0s;
+	-ms-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;
+}
+.navbar-default .navbar-collapse { background: none; }
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:visited {
+	background: none;
+	color: #267ac1;
+}
+.dropdown-menu { background-color: rgba(0, 0, 0, 1) }
+
+.navbar .navbar-nav {
+	display: inline-block;
+	float: none;
+	z-index: 999;
+}
+
+.navbar .navbar-collapse {
+	text-align: center;
+}
+
+.navbar-default {
+	height: 50px;
+	background-color: rgba(255, 255, 255, 1);
+	width: 100%;
+	margin-bottom: 0;
+	z-index: 10;
+	border-radius: 0;
+}
+
+.f-nav .navbar-default  {
+	background-color: white;
+	-webkit-box-shadow: 0px 4px 28px -4px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 4px 28px -4px rgba(0,0,0,0.75);
+	box-shadow: 0px 4px 28px -4px rgba(0,0,0,0.75);
+
+}
+
+/* ---------------------
+SLIDER
+--------------------- */
+#myCarousel {
+	background-color: black;
+}
+.carousel > .carousel-inner > .item > img {
+	margin: 0 auto;
+	height: 40vw;
+	width: 100%;
+}
+
+.carousel .text {
+	width: 30%;
+	position: absolute;
+	top: 7vw;
+	left: 20vw;
+	color: white;
+	z-index: 10;
+}
+
+.carousel .text h1 {
+	font-family: 'Helvetica 45', sans-serif;
+	font-size: 3.3vw;
+	line-height: 3.9vw;
+}
+.carousel .text h2 {
+	font-size: 1.5vw;
+}
+
+.carousel .text .btn-default {
+	font-family: 'Helvetica 65', sans-serif;
+	font-size: 1.4vw;
+	padding: 0.6vw 1vw;
+	border: 1px solid white;
+	color: white;
+	background: none;
+
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	-moz-transition: all 0.3s ease-in-out 0s;
+	-o-transition: all 0.3s ease-in-out 0s;
+	-ms-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;
+}
+.carousel .text .btn-default:hover {
+	color: white;
+	background: rgba(255, 255, 255, 0.18);
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	-moz-transition: all 0.3s ease-in-out 0s;
+	-o-transition: all 0.3s ease-in-out 0s;
+	-ms-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;
+}
+
+.control-slider {
+	filter: alpha(opacity=30);
+	opacity: 0.3;
+}
+
+.carousel-control.left, .carousel-control.right{
+	background: none;
+}
+
+.control-slider:hover, .control-slider:focus {
+	filter: alpha(opacity=100);
+	opacity: 1;
+}
+
+.carousel-indicators {z-index: 1}
+
+/* ---------------------
+MAIN
+--------------------- */
+
+main {
+	padding-bottom: 250px;
+}
+
+/* ---------------------
+FOOTER
+--------------------- */
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background-color: #267ac1;
+	padding-top: 10px;
+}
+footer .container { background-color: #267ac1; }
+footer .logo {
+	padding-top: 20px;
+	color: white;
+}
+footer .logo img { height: 50px; }
+footer .logo a { color: white }
+footer .logo a:visited { color: white; text-decoration: none; }
+footer .logo a:hover { cursor:pointer; color: white; text-decoration: none; }
+
+footer hr { margin: 0 0 10px; }
+
+.footer-enlaces {
+	font-size: 15px;
+	color:	rgb(255,255,255);
+}
+.footer-enlaces a { color: white; text-decoration: none; }
+.footer-enlaces a:visited { color: #d1d1d1; text-decoration: none; }
+.footer-enlaces a:hover { cursor:pointer; color: white; text-decoration: underline; }
+footer ul { list-style-type: none; }
+
+
+.footer-contacto { color: white; }
+footer h5 {
+	text-transform: uppercase;
+	font-family: 'Helvetica 65', sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+}
+.footer-contacto p {
+	font-size: 15px;
+}
+
+footer .copyright p {
+	color: white;
+	font-size: 14px;
+	text-align: center;
+}

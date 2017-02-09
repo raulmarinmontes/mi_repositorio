@@ -1,0 +1,336 @@
+<!--
+    Autores = Celia Alonso, Raul Marin, Ricardo Salido, David Gomez
+    Fecha = 1/12/2015
+    Licencia = GPL v3
+    Versión = 1.0
+    Descripción = Que hacemos y ofrecemos de Buscando a Nemo
+
+    Copyright (C) 2015  David Gómez Quilón
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUSCANDO A NEMO | ¿Qué hacemos y ofrecemos?</title>
+
+    <!-- ===========================
+        FAVICON
+        =========================== -->
+    <link rel="icon" href="img/logo_negro.png" type="image/gif"/>
+
+    <!-- ===========================
+        FUENTES
+        =========================== -->
+    <link href='libs/font-awesome/css/font-awesome.min.css' rel='stylesheet'>
+    <!-- ===========================
+        ARCHIVOS CSS
+        =========================== -->
+    <link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/hacemosyofrecemos.css">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+
+    <!--[if IE]>
+    <script src="libs/ie/html5shiv.min.js"></script>
+    <script src="libs/ie/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<div class="alert alert-cookies alert-dismissible" role="alert">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    Este sitio web utiliza cookies, si continua navegando por el sitio da por hecho que ha sido debidamente informado y que acepta que hagamos uso de ellas.
+    Puede consultar la política de cookie de <strong>Buscando a Nemo desde</strong> <a href="politica_C.html">aquí</a>.
+</div>
+
+<div id="wrapper">
+    <!-- ===========================
+   HEADER
+   =========================== -->
+    <header>
+        <div class="container header">
+            <div class="row header">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <a href="index.html" class="go-to-index" id="logo"><p class="logo">
+                        <img src="img/logo_negro.png" alt="Logo Buscando A Nemo">
+                        <strong>BUSCANDO</strong> A NEMO
+                    </p></a>
+                </div>
+                <div class="col-lg-6 col-sm-6">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <p class="welcome right" id="welcome"></p>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <a href="registro.html" class="btn btn-iniciar right">Regístrate</a>
+                        <a href="login.html" class="btn btn-iniciar right">Accede a tu cuenta</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+            </div>
+        </div>
+    </header>
+
+
+    <!-- ===========================
+   NAV
+   =========================== -->
+    <div class="navbar-container">
+        <nav class="navbar navbar-default">
+            <div class="container navigation">
+                <a href="index.html#" class="go-to-index"><p class="nav-logo left">
+                    <img src="img/logo_negro.png" alt="Logo barra navegación Buscando A Nemo">
+                    <strong>BUSCANDO</strong> A NEMO
+                </p></a>
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>HOME</a></li>
+                        <li class="active"><a href="hacemosyofrecemos.html"><i class="fa fa-info" aria-hidden="true"></i>INFORMACIÓN</a></li>
+                        <li><a href="tienda.html"><i class="fa fa-shopping-basket" aria-hidden="true"></i>TIENDA</a></li>
+                        <li><a href="galeria.html"><i class="fa fa-picture-o" aria-hidden="true"></i>GALERÍA</a></li>
+                        <li><a href="contacto.html"><i class="fa fa-envelope" aria-hidden="true"></i>CONTACTO</a></li>
+                        <li class="item-search">
+                            <form class="navbar-form">
+                                <div class="input-group">
+                                    <label for="search" aria-hidden="true" title="Busqueda">
+                                        <span class="sr-only">Busqueda</span>
+                                    </label>
+                                    <div class="input-group-btn">
+                                        <input type="text" class="form-control" id="search" placeholder="Busqueda">
+                                        <button class="btn btn-default btn-search" type="submit" aria-hidden="true" title="Buscar">
+                                            <span class="sr-only">Buscar</span>
+                                            <i class="glyphicon glyphicon-search" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- ===========================
+    SUBMENU
+    =========================== -->
+    <div class="sub-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 bread-crumb">
+                    <h1>Información</h1>
+                    <p>
+                        <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>Buscando a Nemo</a>
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        <i class="fa fa-info" aria-hidden="true"></i><strong>Información</strong>
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 subheader-img wow fadeInRight">
+                    <img src="img/pez1_subheader.png" alt="Pez tropical">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===========================
+    CONTENIDO DE LA PÁGINA
+    =========================== -->
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 content-upper">
+                    <h2>¿Qué hacemos y ofrecemos?</h2>
+                    <p>
+                        En <b>BUSCANDO A NEMO</b> queremos ofrecer la mejor calidad a nuestros clientes. Por eso,
+                        cumplimos con todas las medidas
+                        necesarias para llevar a cabo nuestra actividad. <b>BUSCANDO A NEMO</b> no es la típica tienda
+                        de peces, aquí hacemos
+                        de nuestro hobby nuestro trabajo por eso cuidamos hasta el mas mínimo detalle; porque nos gusta
+                        lo que hacemos y disfrutamos con ello.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container panel panel-default container-custom border-box">
+            <div class="panel-body">
+                <div class="col-sm-4 col-xs-4 item-tagging venta-color">
+                    <div class="wow rotateIn">
+                        <a class="tagging-icon" aria-hidden="true" onClick="hide('mantenimiento'); hide('reparto') ; show('venta')"><i
+                                class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                    </div>
+                    <a id="trigger-venta" onClick="hide('mantenimiento'); hide('reparto') ; show('venta')">Venta</a>
+                </div>
+                <div class="col-sm-4 col-xs-4 item-tagging mant-color">
+                    <div class="wow rotateIn">
+                        <a class="tagging-icon mant-color"
+                           onClick="hide('venta'); hide('reparto'); show('mantenimiento')"><i
+                                class="fa fa-heartbeat" aria-hidden="true"></i></a>
+                    </div>
+                    <a id="trigger-mantenimiento" onClick="hide('venta'); hide('reparto'); show('mantenimiento')">Mantenimiento</a>
+                </div>
+                <div class="col-sm-4 col-xs-4 item-tagging reparto-color">
+                    <div class="wow rotateIn">
+                        <a class="tagging-icon" onClick="hide('mantenimiento'); hide('venta'); show('reparto')"><i
+                                class="fa fa-truck" aria-hidden="true"></i></a>
+                    </div>
+                    <a id="trigger-reparto" onClick="hide('mantenimiento'); hide('venta'); show('reparto');">Reparto</a>
+                </div>
+                <div class="col-sm-12 panel-body text-tagging border-box">
+                    <p id="venta">
+                        En <b>BUSCANDO A NEMO</b> vendemos en tienda física y online, por eso disponemos de las mejores
+                        instalaciones y de un servicio a domicilio
+                        que cubre todas las necesidades pertinentes para el cuidado personalizado de cada especie que
+                        vendemos. Si compras en nuestra tienda estarás
+                        favoreciendo la lucha contra el maltrato de animales marinos. Lo que vendemos, está vivo igual
+                        que nosotros por lo tanto hay, que saber cómo
+                        hacerlo y nosotros lo sabemos poner en practica.
+                    <p id="mantenimiento">
+                        Las instalaciones de <b>BUSCANDO A NEMO</b> son inmejorables, cada especie dispone de su amplio
+                        habitat en las mismas condiciones, que se
+                        asemejan a las de su habitat natural por lo tanto, no alteramos su ciclo de vida por eso
+                        nuestras especies lucen mejor que en ningún otro
+                        sitio. Nuestros peces son muy sanos, porque disponemos del mejor equipo de expertos del mundo
+                        acuático.
+                    </p>
+                    <p id="reparto">
+                        Cuando te dedicas a repartir cosas inertes solo tienes que preocuparte de si es frágil o no y
+                        marcarlo en la caja para que el repartidor no
+                        lo ponga abajo del todo y tus clientes no se enfaden porque ha llegado roto, pero cuando vendes
+                        seres vivos necesitas un sistema de reparto
+                        que cuide de la salud de estos animales, que van a viajar. Pero sobretodo la persona encargada
+                        de llevarlo a casa de nuestros clientes tiene
+                        que ser un repartidor cualificado y amante de los animales, para así asegurar que todo llega en
+                        su sitio y sobre todo vivo. En
+                        <b>BUSCANDO A NEMO</b> disponemos de este sistema de reparto y nuestros repartidores no solo
+                        necesitan saberse las calles y tener el carnet
+                        de conducir, aquí son amantes del mundo marino y están altamente cualificados para realizar este
+                        servicio.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- ===========================
+    FOOTER
+    =========================== -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 logo">
+                    <a href="#">
+                        <p>
+                            <img src="img/logo.png" alt="Logo pie de página Buscando A Nemo">
+                            <strong>BUSCANDO</strong> A NEMO
+                        </p>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 footer-enlaces">
+                    <!--<a onclick="abrirLicencia()">Términos de licencia</a> |
+                    <a href="contacto.html">Contacte con nosotros</a> |
+                    <a href="#">Tienda</a>-->
+                    <h5>Interes</h5>
+                    <ul>
+                        <li><i class="fa fa-certificate" aria-hidden="true"></i><a onclick="abrirLicencia()">Términos de licencia</a></li>
+                        <li><i class="fa fa-envelope" aria-hidden="true"></i><a href="contacto.html">Contacte con nosotros</a></li>
+                        <li><i class="fa fa-envelope" aria-hidden="true"></i><a onclick="abrirMapaWeb()">Mapa web</a></li>
+                        <li><i class="fa fa-envelope" aria-hidden="true"></i><a onclick="abrirPoliticaC()">Política de cookies</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-md-4 col-sm-4 footer-contacto">
+                    <h5>Contacto</h5>
+                    <ul>
+                        <li><i class="fa fa-map-marker" aria-hidden="true"></i>Dirección: <b>Calle Piruleta Nª 123. Madrid, España.</b>
+                        </li>
+                        <li><i class="fa fa-phone" aria-hidden="true"></i>Telf: <b>+34 9183475863</b></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="row copyright">
+                <p>
+                    <b>Página Web diseñada por:</b> Celia Alonso, Raúl Marín, Ricardo Salido y David Gómez para <b>BUSCANDO
+                    A NEMO</b>. Bajo la licencia <b>GPL</b>
+                </p>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<!-- ===========================
+SCRIPTS NECESARIOS
+=========================== -->
+<script src="libs/jquery/jquery.min.js"></script>
+<script src="libs/bootstrap/bootstrap.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/cookies.js"></script>
+<script src="js/licencia.js"></script>
+<script src="js/mapaWeb.js"></script>
+<script src="js/navbar.js"></script>
+<script src="js/politica_Cokiees.js"></script>
+<script>
+    new WOW().init();
+</script>
+
+<script>
+    function hide(obj) {
+        var el = document.getElementById(obj);
+        el.style.display = 'none';
+        document.getElementById('trigger-' + obj).style.textDecoration = 'none';
+    }
+    function show(obj) {
+        var el = document.getElementById(obj);
+        el.style.display = 'block';
+        document.getElementById('trigger-' + obj).style.textDecoration = 'underline';
+    }
+    show('venta');
+
+    switch (window.location.search) {
+        case "?accion=venta":
+            hide('mantenimiento');
+            hide('reparto');
+            show('venta');
+            break;
+        case "?accion=mantenimiento":
+            hide('venta');
+            hide('reparto');
+            show('mantenimiento');
+            break;
+        case "?accion=servicio":
+            hide('mantenimiento');
+            hide('venta');
+            show('reparto');
+            break;
+    }
+</script>
+
+</body>
+</html>

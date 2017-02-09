@@ -1,0 +1,291 @@
+<!--
+    Autores = Celia Alonso, Raul Marin, Ricardo Salido, David Gomez
+    Fecha = 1/12/2015
+    Licencia = GPL v3
+    Versión = 1.0
+    Descripción = Login y registro de Buscando a Nemo
+
+    Copyright (C) 2015  David Gómez Quilón
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUSCANDO A NEMO | Login</title>
+
+    <!-- ===========================
+        FAVICON
+        =========================== -->
+    <link rel="icon" href="img/logo_negro.png" type="image/gif"/>
+
+    <!-- ===========================
+        FUENTES
+        =========================== -->
+    <link href='libs/font-awesome/css/font-awesome.min.css' rel='stylesheet'>
+    <!-- ===========================
+        ARCHIVOS CSS
+        =========================== -->
+    <link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+
+    <!--[if IE]>
+    <script src="libs/ie/html5shiv.min.js"></script>
+    <script src="libs/ie/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<div class="alert alert-cookies alert-dismissible" role="alert">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    Este sitio web utiliza cookies, si continua navegando por el sitio da por hecho que ha sido debidamente informado y que acepta que hagamos uso de ellas.
+    Puede consultar la política de cookie de <strong>Buscando a Nemo desde</strong> <a href="politica_C.html">aquí</a>.
+</div>
+
+<div id="wrapper">
+    <!-- ===========================
+   HEADER
+   =========================== -->
+    <header>
+        <div class="container header">
+            <div class="row header">
+                <div class="col-lg-6 col-sm-6">
+                    <a href="index.html" class="go-to-index"><p class="logo">
+                        <img src="img/logo_negro.png" alt="Logo de Buscando a Nemo en la cabecera de la página.">
+                        <strong>BUSCANDO</strong> A NEMO
+                    </p></a>
+                </div>
+                <div class="col-lg-6 col-sm-6">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <p class="welcome right" id="welcome"></p>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <a href="registro.html" class="btn btn-iniciar right">Regístrate</a>
+                        <a href="login.html" class="btn btn-iniciar right">Accede a tu cuenta</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+            </div>
+        </div>
+    </header>
+
+
+    <!-- ===========================
+   NAV
+   =========================== -->
+    <div class="navbar-container">
+        <nav class="navbar navbar-default">
+            <div class="container navigation">
+                <a class="go-to-index"><p class="nav-logo left">
+                    <img src="img/logo_negro.png" alt="Logo Buscando a Nemo de la barra de navegación" aria-hidden="true">
+                    <strong>BUSCANDO</strong> A NEMO
+                </p></a>
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>HOME</a></li>
+                        <li><a href="hacemosyofrecemos.html"><i class="fa fa-info" aria-hidden="true"></i>INFORMACIÓN</a></li>
+                        <li><a href="tienda.html"><i class="fa fa-shopping-basket" aria-hidden="true"></i>TIENDA</a></li>
+                        <li><a href="galeria.html"><i class="fa fa-picture-o" aria-hidden="true"></i>GALERÍA</a></li>
+                        <li><a href="contacto.html"><i class="fa fa-envelope" aria-hidden="true"></i>CONTACTO</a></li>
+                        <li class="item-search">
+                            <form class="navbar-form">
+                                <div class="input-group">
+                                    <label for="search" aria-hidden="true" title="Busqueda">
+                                        <span class="sr-only">Busqueda</span>
+                                    </label>
+                                    <div class="input-group-btn">
+                                        <input type="text" class="form-control" id="search" placeholder="Busqueda">
+                                        <button class="btn btn-default btn-search" type="submit" aria-hidden="true" title="Buscar">
+                                            <span class="sr-only">Buscar</span>
+                                            <i class="glyphicon glyphicon-search" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- ===========================
+    SUBMENU
+    =========================== -->
+    <div class="sub-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 bread-crumb">
+                    <h1>Accede a tu cuenta</h1>
+                    <p>
+                        <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>Buscando a Nemo</a>
+                        <i class="fa fa-angle-right"></i>
+                        <i class="fa fa-sign-in"></i><strong>Accede a tu cuenta</strong>
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 subheader-img wow fadeInRight">
+                    <img src="img/pez1_subheader.png" alt="Pez tropical">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===========================
+    CONTENIDO DE LA PÁGINA
+    =========================== -->
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <div class="panel panel-login">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <a href="#" class="active" id="login-form-link">Iniciar sesión</a>
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <form id="login-form" method="post" role="form" style="display: block;">
+                                        <div class="form-group">
+                                            <label class="sr-only" for="username">Nombre de usuario</label>
+                                            <input type="text" name="username" id="username"
+                                                   class="form-control" placeholder="Usuario" value="">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="sr-only" for="password">Contraseña</label>
+                                            <input type="password" name="password" id="password"
+                                                   class="form-control" placeholder="Contraseña">
+                                        </div>
+                                        <div class="form-group text-center">
+                                            <input type="checkbox" class="" name="remember" id="remember">
+                                            <label for="remember"> Recordar</label>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-sm-6 col-sm-offset-3">
+                                                    <button type="button" name="login-submit" id="login-submit"
+                                                            class="form-control btn btn-login">
+                                                        Entrar
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <div class="text-center">
+                                                        <a href="#" class="forgot-password text-info">¿Has olvidado
+                                                            la contraseña?</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- ===========================
+    FOOTER
+    =========================== -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 logo">
+                    <a href="#">
+                        <p>
+                            <img src="img/logo.png" alt="Logo Buscando A Nemo">
+                            <strong>BUSCANDO</strong> A NEMO
+                        </p>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 footer-enlaces">
+                    <!--<a onclick="abrirLicencia()">Términos de licencia</a> |
+                    <a href="contacto.html">Contacte con nosotros</a> |
+                    <a href="#">Tienda</a>-->
+                    <h5>Interes</h5>
+                    <ul>
+                        <li><i class="fa fa-certificate"></i><a onclick="abrirLicencia()">Términos de licencia</a></li>
+                        <li><i class="fa fa-envelope" aria-hidden="true"></i><a href="contacto.html">Contacte con nosotros</a></li>
+                        <li><i class="fa fa-envelope" aria-hidden="true"></i><a href="#">Mapa web</a></li>
+                        <li><i class="fa fa-envelope" aria-hidden="true"></i><a onclick="abrirMapaWeb()">Mapa web</a></li>
+                        <li><i class="fa fa-envelope" aria-hidden="true"></i><a onclick="abrirPoliticaC()">Política de cookies</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-md-4 col-sm-4 footer-contacto">
+                    <h5>Contacto</h5>
+                    <ul>
+                        <li><i class="fa fa-map-marker"></i>Dirección: <b>Calle Piruleta Nª 123. Madrid, España.</b>
+                        </li>
+                        <li><i class="fa fa-phone"></i>Telf: <b>+34 9183475863</b></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="row copyright">
+                <p>
+                    <b>Página Web diseñada por:</b> Celia Alonso, Raúl Marín, Ricardo Salido y David Gómez para <b>BUSCANDO
+                    A NEMO</b>. Bajo la licencia <b>GPL</b>
+                </p>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<!-- ===========================
+SCRIPTS NECESARIOS
+=========================== -->
+<script src="libs/jquery/jquery.min.js"></script>
+<script src="libs/bootstrap/bootstrap.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/cookies.js"></script>
+<script src="js/licencia.js"></script>
+<script src="js/mapaWeb.js"></script>
+<script src="js/politica_Cokiees.js"></script>
+<script src="js/navbar.js"></script>
+<script>
+    new WOW().init();
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,404 @@
+<!--
+    Autores = Celia Alonso, Raul Marin, Ricardo Salido, David Gomez
+    Fecha = 1/12/2015
+    Licencia = GPL v3
+    Versión = 1.0
+    Descripción = HOME de Buscando a Nemo
+
+    Copyright (C) 2015  David Gómez Quilón
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUSCANDO A NEMO | Galería de imágenes</title>
+
+    <!-- ===========================
+        FAVICON
+        =========================== -->
+    <link rel="icon" href="img/logo_negro.png" type="image/gif"/>
+
+    <!-- ===========================
+        FUENTES
+        =========================== -->
+    <link href='libs/font-awesome/css/font-awesome.min.css' rel='stylesheet'>
+    <!-- ===========================
+        ARCHIVOS CSS
+        =========================== -->
+    <link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/galeria.css">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+
+    <!--[if IE]>
+    <script src="libs/ie/html5shiv.min.js"></script>
+    <script src="libs/ie/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<div class="alert alert-cookies alert-dismissible" role="alert">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    Este sitio web utiliza cookies, si continua navegando por el sitio da por hecho que ha sido debidamente informado y que acepta que hagamos uso de ellas.
+    Puede consultar la política de cookie de <strong>Buscando a Nemo desde</strong> <a href="politica_C.html">aquí</a>.
+</div>
+
+<div id="wrapper">
+    <!-- ===========================
+   HEADER
+   =========================== -->
+    <header>
+        <div class="container header">
+            <div class="row header">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <a href="index.html" class="go-to-index"><p class="logo">
+                        <img src="img/logo_negro.png" alt="Logo Buscando A Nemo">
+                        <strong>BUSCANDO</strong> A NEMO
+                    </p></a>
+                </div>
+                <div class="col-lg-6 col-sm-6">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <p class="welcome right" id="welcome"></p>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <a href="registro.html" class="btn btn-iniciar right">Regístrate</a>
+                        <a href="login.html" class="btn btn-iniciar right">Accede a tu cuenta</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+            </div>
+        </div>
+    </header>
+
+
+    <!-- ===========================
+   NAV
+   =========================== -->
+    <div class="navbar-container">
+        <nav class="navbar navbar-default">
+            <div class="container navigation">
+                <a href="index.html#" class="go-to-index"><p class="nav-logo left">
+                    <img src="img/logo_negro.png" alt="Logo Buscando a Nemo, barra de navegación.">
+                    <strong>BUSCANDO</strong> A NEMO
+                </p></a>
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>HOME</a></li>
+                        <li><a href="hacemosyofrecemos.html"><i class="fa fa-info" aria-hidden="true"></i>INFORMACIÓN</a></li>
+                        <li><a href="tienda.html"><i class="fa fa-shopping-basket" aria-hidden="true"></i>TIENDA</a></li>
+                        <li class="active"><a href="galeria.html"><i class="fa fa-picture-o" aria-hidden="true"></i>GALERÍA</a></li>
+                        <li><a href="contacto.html"><i class="fa fa-envelope" aria-hidden="true"></i>CONTACTO</a></li>
+                        <li class="item-search">
+                            <form class="navbar-form">
+                                <div class="input-group">
+                                    <label for="search" aria-hidden="true" title="Busqueda">
+                                        <span class="sr-only">Busqueda</span>
+                                    </label>
+                                    <div class="input-group-btn">
+                                        <input type="text" class="form-control" id="search" placeholder="Busqueda">
+                                        <button class="btn btn-default btn-search" type="submit" aria-hidden="true" title="Buscar">
+                                            <span class="sr-only">Buscar</span>
+                                            <i class="glyphicon glyphicon-search" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- ===========================
+    SUBMENU
+    =========================== -->
+    <div class="sub-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 bread-crumb">
+                    <h1>Galería de imágenes</h1>
+                    <p>
+                        <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>Buscando a Nemo</a>
+                        <i class="fa fa-angle-right"></i>
+                        <i class="fa fa-envelope" aria-hidden="true"></i><strong>Galería</strong>
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 subheader-img wow fadeInRight">
+                    <img src="img/pez1_subheader.png" alt="Pez tropical">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ===========================
+    CONTENIDO-GALERÍA
+    =========================== -->
+
+    <main>
+        <div class="container">
+            <div class="row intro">
+                <h2>Galería de imágenes</h2>
+                <p>
+                    Aquí puedes echar un vistazo a algunos de nuestros trabajos como diseñadores de acuarios.<br>
+                    Es una pequeña parte de lo que somos capaz de hacer en <b>BUSCANDO A NEMO</b>.
+                </p>
+            </div>
+            <div class="row galery-foot-head">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="btn-group">
+                        <button class="btn btn-default btn-sm dropdown-toggle"
+                                type="button" data-toggle="dropdown">
+                            Mostrar... <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">10</a></li>
+                            <li><a href="#">20</a></li>
+                            <li><a href="#">40</a></li>
+                            <li><a href="#">60</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <ul class="pagination">
+                        <li><a><i class="fa fa-chevron-left"></i></a></li>
+                        <li class="active"><a>1</a></li>
+                        <li><a>2</a></li>
+                        <li><a>3</a></li>
+                        <li><a>4</a></li>
+                        <li><a>5</a></li>
+                        <li><a><i class="fa fa-chevron-right"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="row" id="wizards">
+                <!-- GRUPO DE 3 -->
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 galery-item">
+                    <div class="item-content">
+                        <a href="img/imagenes-galeria/foto1.jpg">
+                            <img src="img/imagenes-galeria/foto1.jpg" alt="foto1"/>
+                        </a>
+                        <p><b>Acuario 500l</b> plantado natural </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 galery-item">
+                    <div class="item-content">
+                        <a href="img/imagenes-galeria/foto2.jpg">
+                            <img src="img/imagenes-galeria/foto2.jpg" alt="foto2"/>
+                        </a>
+                        <p><b>Acuario 60l</b> plantado natural</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 galery-item">
+                    <div class="item-content">
+                        <a href="img/imagenes-galeria/foto3.jpg">
+                            <img src="img/imagenes-galeria/foto3.jpg" alt="foto3"/>
+                        </a>
+                        <p>Acuario de <b>cría y enfermería</b></p>
+                    </div>
+                </div>
+
+                <!-- GRUPO DE 3 -->
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 galery-item">
+                    <div class="item-content">
+                        <a href="img/imagenes-galeria/foto4.jpg">
+                            <img src="img/imagenes-galeria/foto4.jpg" alt="foto4"/>
+                        </a>
+                        <p><b>Acuario 300l</b> plantado natural</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 galery-item">
+                    <div class="item-content">
+                        <a href="img/imagenes-galeria/foto5.jpg">
+                            <img src="img/imagenes-galeria/foto5.jpg" alt="foto5"/>
+                        </a>
+                        <p>Acuario <b>agua fría</b></p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 galery-item">
+                    <div class="item-content">
+                        <a href="img/imagenes-galeria/foto6.jpg">
+                            <img src="img/imagenes-galeria/foto6.jpg" alt="foto6"/>
+                        </a>
+                        <p>Acuario marino con <b>peces ángel</b></p>
+                    </div>
+                </div>
+
+                <!-- GRUPO DE 3 -->
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 galery-item">
+                    <div class="item-content">
+                        <a href="img/imagenes-galeria/foto7.jpg">
+                            <img src="img/imagenes-galeria/foto7.jpg" alt="foto7"/>
+                        </a>
+                        <p>Peces <b>Disco</b></p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 galery-item">
+                    <div class="item-content">
+                        <a href="img/imagenes-galeria/foto8.jpg">
+                            <img src="img/imagenes-galeria/foto8.jpg" alt="foto8"/>
+                        </a>
+                        <p>Acuario plantado con <b>musgo y vallisnerias</b></p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 galery-item">
+                    <div class="item-content">
+                        <a href="img/imagenes-galeria/foto9.jpg">
+                            <img src="img/imagenes-galeria/foto9.jpg" alt="foto9"/>
+                        </a>
+                        <p>Acuario plantado con <b>plantas higrófilas</b></p>
+                    </div>
+                </div>
+
+                <!-- GRUPO DE 3 -->
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 galery-item">
+                    <div class="item-content">
+                        <a href="img/imagenes-galeria/foto10.jpg">
+                            <img src="img/imagenes-galeria/foto10.jpg" alt="foto10"/>
+                        </a>
+                        <p>Acuario con <b>helechos y cryptocorines</b></p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 galery-item">
+                    <div class="item-content">
+                        <a href="img/imagenes-galeria/foto11.jpg">
+                            <img src="img/imagenes-galeria/foto11.jpg" alt="foto11"/>
+                        </a>
+                        <p>Acuario marino <b>500l</b></p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 galery-item">
+                    <div class="item-content">
+                        <a href="img/imagenes-galeria/foto12.jpg">
+                            <img src="img/imagenes-galeria/foto12.jpg" alt="foto12"/>
+                        </a>
+                        <p>Peces <b>tropicales</b></p>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+            <div class="row galery-foot-head">
+                <div class="col-lg-12 right">
+                    <ul class="pagination">
+                        <li><a><i class="fa fa-chevron-left"></i></a></li>
+                        <li class="active"><a>1</a></li>
+                        <li><a>2</a></li>
+                        <li><a>3</a></li>
+                        <li><a>4</a></li>
+                        <li><a>5</a></li>
+                        <li><a><i class="fa fa-chevron-right"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- ===========================
+     FOOTER
+     =========================== -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 logo">
+                    <a href="#">
+                        <p>
+                            <img src="img/logo.png" alt="Logo Buscando A Nemo">
+                            <strong>BUSCANDO</strong> A NEMO
+                        </p>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 footer-enlaces">
+                    <!--<a onclick="abrirLicencia()">Términos de licencia</a> |
+                    <a href="contacto.html">Contacte con nosotros</a> |
+                    <a href="#">Tienda</a>-->
+                    <h5>Interes</h5>
+                    <ul>
+                        <li><i class="fa fa-certificate"></i><a onclick="abrirLicencia()">Términos de licencia</a></li>
+                        <li><i class="fa fa-envelope" aria-hidden="true"></i><a href="contacto.html">Contacte con nosotros</a></li>
+                        <li><i class="fa fa-envelope" aria-hidden="true"></i><a onclick="abrirMapaWeb()">Mapa web</a></li>
+                        <li><i class="fa fa-envelope" aria-hidden="true"></i><a onclick="abrirPoliticaC()">Política de cookies</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-md-4 col-sm-4 footer-contacto">
+                    <h5>Contacto</h5>
+                    <ul>
+                        <li><i class="fa fa-map-marker"></i>Dirección: <b>Calle Piruleta Nª 123. Madrid, España.</b>
+                        </li>
+                        <li><i class="fa fa-phone"></i>Telf: <b>+34 9183475863</b></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="row copyright">
+                <p>
+                    <b>Página Web diseñada por:</b> Celia Alonso, Raúl Marín, Ricardo Salido y David Gómez para <b>BUSCANDO
+                    A NEMO</b>. Bajo la licencia <b>GPL</b>
+                </p>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<!-- ===========================
+SCRIPTS NECESARIOS
+=========================== -->
+<script src="libs/jquery/jquery.min.js"></script>
+<script src="libs/jquery/jquery-lightbox.js"></script>
+<script src="libs/bootstrap/bootstrap.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/cookies.js"></script>
+<script src="js/licencia.js"></script>
+<script src="js/mapaWeb.js"></script>
+<script src="js/navbar.js"></script>
+<script src="js/politica_Cokiees.js"></script>
+<script>
+    new WOW().init();
+</script>
+
+<script>
+
+    $('.dropdown-toggle').click(function () {
+        $(this).next('.dropdown-menu').slideToggle(200);
+    });
+</script>
+
+<script>
+    $(document).ready(function () {
+        $("#wizards a").lightBox();
+    });
+</script>
+
+</body>
+</html>
