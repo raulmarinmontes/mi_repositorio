@@ -12,7 +12,7 @@ Links de interes
 # Comandos GIT de interes
 Clonar el respositorio
 ```sh
-$ git clone https://github.com/RepositorioWebDAW.git
+$ git clone https://github.com/.....
 ```
 Volver a un commit y borrar todos los posteriores
 ```sh
