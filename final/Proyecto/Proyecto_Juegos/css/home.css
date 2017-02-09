@@ -1,0 +1,354 @@
+/*
+ *    Autor = Raul Marin
+ *    Fecha = 
+ *    Licencia = GPL v3
+ *    Versión = 1.0
+ *    Descripción = Definiciones CSS
+ *
+ *    Copyright (C) 2016 TABLE GAMES
+ *
+ *    This program is free software: you can redistribute it and/or modify
+ *    it under the terms of the GNU General Public License as published by
+ *    the Free Software Foundation, either version 3 of the License, or
+ *    (at your option) any later version.
+ *
+ *    This program is distributed in the hope that it will be useful,
+ *    but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *    GNU General Public License for more details.
+ *
+ *    You should have received a copy of the GNU General Public License
+ *    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+/* --------------------- 
+CONTENIDO
+--------------------- */
+.item:hover {
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+
+    -webkit-transform: scale3d(1.25, 1.25, 1.25);
+    transform: scale3d(1.25, 1.25, 1.25);
+}
+
+.video {
+    margin-top: 50px;
+    background-color: #267ac1;
+    color: white;
+    padding: 30px;
+}
+
+iframe {
+    width: 100%;
+    height: 315px;
+}
+
+.columns {
+    margin-top: 100px;
+    text-align: center;
+    height: 880px;
+
+}
+
+.img_sub {
+    position: relative;
+    left: 203px;
+    top: 30px;
+
+}
+
+.columns .column {
+    padding: 30px;
+}
+
+.column h2 {
+    font-family: 'Helvetica 55', sans-serif;
+    font-size: 25px;
+}
+
+.video .description {
+    text-align: center;
+    padding-top: 70px;
+}
+
+.description h3 {
+    font-family: 'Helvetica 55', sans-serif;
+    font-size: 35px;
+}
+
+.publicidad {
+    background-color: #eee;
+    padding: 40px;
+    margin-bottom: -30px;
+    text-align: center;
+    height: 250px;
+}
+
+.publicidad h4 {
+    font-family: 'Helvetica 55', sans-serif;
+    font-size: 37px;
+}
+
+.publicidad h5 {
+    font-family: 'Helvetica 65', sans-serif;
+}
+
+.publicidad p {
+    font-family: 'Helvetica 55', sans-serif;
+    font-size: 16px;
+}
+
+.colab .colab-item {
+    padding-top: 50px;
+}
+
+.colab .colab-item .colab-item-cont img {
+    height: 130px;
+    width: 130px;
+}
+
+.colab .colab-item .colab-item-cont {
+    margin: 0 auto;
+    width: 90%;
+    padding: 20px;
+    background-color: white;
+}
+
+.colab-item .btn {
+    margin: 10px;
+    font-family: 'Helvetica 55', sans-serif;
+    padding: 7px 15px;
+    color: white;
+    border: none;
+}
+
+.btn-success {
+    background-color: #267ac1;
+}
+
+.colab-item .btn:hover {
+    background-color: #2e6ca2;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+@media only screen and (max-width: 768px) {
+    .video .description {
+        padding-top: 0;
+    }
+}
+
+#hr_dest {
+
+    position: relative;
+    bottom: 75px;
+}
+
+.product-item .price-after {
+    font-family: 'Helvetica 65', sans-serif;
+    font-size: 20px;
+    color: #FFA200;
+    letter-spacing: -1px;
+}
+
+.product-item .price-before {
+    font-family: 'Helvetica 65', sans-serif;
+    font-size: 15px;
+    color: #777777;
+    margin-left: 10px;
+    text-decoration: line-through;
+    letter-spacing: -1px;
+}
+
+.btn-cart, .btn-cart-mobile, .btn-wishlist, .btn-share {
+    margin: 25px 0px;
+    color: white;
+    font-size: 15px;
+    background-color: #6a6a6a;
+    font-family: 'Helvetica 65', sans-serif;
+    font-weight: normal;
+    padding: 5px 8px 5px 8px;
+    border: none;
+    text-decoration: none;
+}
+
+.btn-cart-mobile {
+    display: none
+}
+
+.btn-cart:hover, .btn-cart-mobile:hover {
+    background-color: #FFA200;
+    color: #474747;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.btn-wishlist i {
+    padding: 0
+}
+
+.btn-share i {
+    padding: 0 2px 0 2px
+}
+
+.btn-wishlist:hover {
+    background-color: #FFA200;
+    color: #474747;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.btn-share:hover {
+    background-color: #FFA200;
+    color: #474747;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.btn-cart, .btn-cart-mobile, .btn-wishlist, .btn-share {
+    font-size: 13px;
+}
+
+.btn-group .btn {
+    font-size: 10px;
+    margin-right: 0;
+}
+
+.img-home {
+    height: 185px;
+    max-height: 185px;
+}
+
+.prod-home {
+    position: relative;
+    bottom: 35px;
+}
+
+.parr_prod {
+
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.btn_home {
+
+    position: relative;
+    bottom: 43px;
+    background-color: rgb(222, 222, 222);
+    color: #474747;
+
+}
+
+.category-product {
+
+    position: relative;
+    bottom: 10px;
+}
+
+.stars {
+
+    position: relative;
+    bottom: 15px;
+
+}
+
+.price-after, .price-before {
+
+    position: relative;
+    bottom: 20px;
+
+}
+
+.product-item .stars i {
+    padding: 1px;
+}
+
+.product-item .stars .star-active {
+    color: #FFA200;
+}
+
+.product-item .stars .star-unactive {
+    color: #a3a3a3;
+}
+
+.img-subhome {
+
+    height: 120px;
+    max-height: 120px;
+    width: 200px;
+    max-width: 200px;
+}
+
+#titulo_productos {
+
+    position: relative;
+    left: 20px;
+    bottom: 50px;
+    font-weight: 600;
+    font-size: 33px;
+    width: 325px;
+}
+
+#boton_pagar {
+
+    position: relative;
+    right: 30px;
+}
+
+#ccookies {
+
+    background-color: #e7e7e7;
+
+}
+
+#overbox3 {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 999999;
+    display: block;
+}
+
+#infobox3 {
+    margin: auto;
+    position: relative;
+    top: 0px;
+    height: 58px;
+    width: 100%;
+    text-align: center;
+    background-color: #eeeeee;
+}
+
+#infobox3 p {
+    line-height: 58px;
+    font-size: 12px;
+    text-align: center;
+}
+
+#infobox3 p a {
+    margin-right: 5px;
+    text-decoration: underline;
+}
+
+.c-o:hover {
+    color: #FFA200;
+}
+
+.c-o {
+    color: black;
+}

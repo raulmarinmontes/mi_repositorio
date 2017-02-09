@@ -1,0 +1,399 @@
+<!--
+    Autores = Raul Marin Montes
+    Fecha =
+    Licencia = GPL v3
+    Versión = 1.0
+    Descripción = TIENDA TABLE GAMES
+
+    Copyright (C) 2016  Raul Marin Montes
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABLE GAMES | Tienda</title>
+
+    <!-- ===========================
+        FAVICON
+        =========================== -->
+    <link rel="icon" href="img/" type="image/gif"/>
+
+    <!-- ===========================
+        FUENTES
+        =========================== -->
+    <style>
+        @import 'https://fonts.googleapis.com/css?family=Chewy';
+    </style>
+    <link href='libs/font-awesome/css/font-awesome.min.css' rel='stylesheet'>
+    <!-- ===========================
+        ARCHIVOS CSS
+        =========================== -->
+    <link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/tienda.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/Carro.css">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+
+    <!--[if IE]>
+    <script src="libs/ie/html5shiv.min.js"></script>
+    <script src="libs/ie/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<div id="wrapper">
+    <!-- ===========================
+   HEADER
+   =========================== -->
+    <header>
+        <div class="container header">
+            <div class="row header">
+                <div class="col-lg-6 col-sm-6 wow bounceInDown">
+                    <a href="index.html" class="go-to-index"><p class="logo">
+                        <img id="logo_b" src="img/logo_b.png" alt="Logo cabecera de la página.">
+                        <strong>TABLE GAMES.</strong>
+                    </p></a>
+                </div>
+                <div class="col-lg-6 col-sm-6 wow bounceInDown">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <p class="welcome right" id="welcome"></p>
+                    </div>
+                    <div id="botones" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <a href="registro.html" class="btn btn-iniciar right">Regístrate</a>
+                        <a href="login.html" class="btn btn-iniciar right">Accede a tu cuenta</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+            </div>
+        </div>
+    </header>
+
+
+    <!-- ===========================
+   NAV
+   =========================== -->
+    <div class="navbar-container">
+        <nav class="navbar navbar-default">
+            <div class="container navigation">
+                <a class="go-to-index"><p class="nav-logo left">
+
+                </a>
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="marg_nav"><a href="index.html"><i class="fa fa-home"></i>HOME</a></li>
+                        <li class="active marg_nav"><a href="tienda.html"><i class="fa fa-gamepad"
+                                                                             aria-hidden="true"></i>TIENDA</a></li>
+                        <li class="marg_nav"><a href="galeria.html"><i class="fa fa-picture-o"></i>GALERÍA</a></li>
+                        <li class="marg_nav"><a href="contacto.html"><i class="fa fa-envelope"></i>CONTACTO</a></li>
+                        <!--<li class="item-search">
+                            <form class="navbar-form" role="search">
+                                <div class="input-group">
+                                    <label for="search" aria-hidden="true" title="Busqueda">
+                                        <span class="sr-only">Busqueda</span>
+                                        <input type="text" class="form-control" id="search" placeholder="Busqueda">
+                                        <div class="input-group-btn">
+                                            <button id="lupa" class="btn btn-default btn-search" type="submit"
+                                                    aria-hidden="true" title="Buscar">
+                                                <span class="sr-only">Buscar</span>
+                                                <i class="glyphicon glyphicon-search"></i>
+                                            </button>
+                                        </div>
+                                    </label>
+                                </div>
+                            </form>
+                        </li>-->
+                        <li class="marg_nav">
+                            <a id="cart">
+                                <i class="fa fa-shopping-cart"></i> Carrito
+                                <span class="carrito-total badge"></span>
+                            </a>
+                        </li>
+                        <div class="cont">
+                            <div class="shopping-cart" style="display: none">
+                                <div class="shopping-cart-header">
+                                    <i class="fa fa-shopping-cart cart-icon"></i><span id="circulo"
+                                                                                       class="carrito-total badge"></span>
+                                    <div class="shopping-cart-total">
+                                        <span class="lighter-text">Total:</span>
+                                        <span class="main-color-text carrito-total-precio"></span>
+                                    </div>
+                                </div> <!--end shopping-cart-header -->
+
+                                <ul class="shopping-cart-items">
+                                    Cargando productos...
+                                </ul>
+
+                                <a href="#" class="button">Pagar</a>
+                            </div> <!--end shopping-cart -->
+                        </div> <!--end container -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- ===========================
+    SUBMENU
+    =========================== -->
+    <div class="sub-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 bread-crumb">
+                    <h1>. Tienda Online</h1>
+                    <p>
+                        <a href="index.html"><i id="logo_casa" class="fa fa-home"></i>TABLE GAMES</a>
+                        <i id="logo_barra" class="fa fa-angle-right"></i>
+                        <i id="logo_categoria" class="fa fa-gamepad"></i>Tienda
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 subheader-img wow fadeInRight">
+                    <img id="consola" src="img/consola02.png" alt="consola">
+                    <img id="familia" src="img/familia.png" alt="familia">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===========================
+    TIENDA
+    =========================== -->
+    <main>
+        <div class="container shop">
+            <div class="row">
+                <!--<div id="bloque_izquierdo" class="col-lg-3 col-md-3 col-sm-3 filter">
+                    <div class="row categories border-box">
+                        <div class="head">
+                            <i class="fa fa-bars"></i>CATEGORÍAS
+                        </div>
+                        <a href="#">
+                            <div class="category">
+                                <i class="fa fa-bug"></i> JUEGOS DE MESA</i>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="category">
+                                <i class="fa fa-fire"></i> JUEGOS DE CARTAS</i>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="category">
+                                <i class="fa fa-cubes"></i> PUZZLES</i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="row search">
+                        <h5><i class="fa fa-search"></i>BUSQUEDA</h5>
+                        <hr>
+                        <label class="sr-only" for="busquedapez">Busqueda de la tienda</label>
+                        <input type="text" id="busquedapez" placeholder="Cartas Magic...">
+                    </div>
+                    <div class="row shop-by">
+                        <h5><i class="fa fa-cogs"></i>FILTROS AVANZADOS</h5>
+                        <hr>
+                        <div class="by-cat">
+                            <div class="shop-by-cat dropdown-toggle " data-toggle="dropdown">
+                                <a href="#">
+                                    Juegos De Mesa
+                                    <i class="fa fa-plus-square-o" aria-hidden="true"></i>
+                                    <i class="fa fa-minus-square-o" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <input type="checkbox">
+                                    <label>Para 2 personas</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox">
+                                    <label>Para 4 personas</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="by-cat">
+                            <div class="shop-by-cat dropdown-toggle " data-toggle="dropdown">
+                                <a href="#">
+                                    Juegos de Cartas
+                                    <i class="fa fa-plus-square-o" aria-hidden="true"></i>
+                                    <i class="fa fa-minus-square-o" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <input type="checkbox">
+                                    <label>Cartas Magic</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox">
+                                    <label>Baraja española</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox">
+                                    <label>Cartas de poker</label>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <button class="btn btn-block btn-filter">Aplicar filtros</button>
+                    </div>
+                </div>-->
+                <div class="col-lg-9 col-md-9 col-sm-9">
+                    <hr class="hr-mobile">
+                    <div class="row banner-oferta wow flipInY">
+                        <img id="img_tienda" src="img/juegos11.png" alt="Oferta 50%">
+                        <h2></h2>
+                        <span></span>
+                    </div>
+                    <div class="row products">
+
+
+                    </div>
+
+                    <!-- ===========================
+                    PRODUCTOS EN REJILLA
+                    =========================== -->
+                    <div class="columns container">
+                        <div>
+                            <h5 id="titulo_productos_des">Productos Destacados</h5>
+                            <hr id="hr_dest">
+                        </div>
+                        <div class="row prod-home" id="tienda-productos">
+
+                        </div>
+
+                    </div>
+
+                    <!--   <div class="row">
+                          <ul class="pagination right">
+                              <li><a href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i><span class="sr-only">Paso atras</span><</a></li>
+                              <li class="active"><a href="#">1</a></li>
+                              <li><a href="#">2</a></li>
+                              <li><a href="#">3</a></li>
+                              <li><a href="#">4</a></li>
+                              <li><a href="#">5</a></li>
+                              <li><a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i><span class="sr-only">Paso adelante</span><</a></li>
+                          </ul>
+                      </div>-->
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- ===========================
+    FOOTER
+    =========================== -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div id="div_footer" class="col-lg-4 col-md-4 col-sm-4 logo">
+                    <a href="#">
+                        <p id="parr_footer">
+                            <img src="img/logo_b.png" alt="Logo del pie de la página.">
+                        <h4 id="titulo_footer">TABLE GAMES.</h4>
+                        </p>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 footer-enlaces">
+                    <!--<a onclick="abrirLicencia()">Términos de licencia</a> |
+                    <a href="contacto.html">Contacte con nosotros</a> |
+                    <a href="#">Tienda</a>-->
+                    <h5>Interes</h5>
+                    <ul class="interes">
+                        <li><i class="fa fa-certificate"></i><a onclick="abrirLicencia()">Términos de licencia</a></li>
+                        <li><i class="fa fa-envelope"></i><a href="contacto.html">Contacte con nosotros</a></li>
+                        <li><i class="fa fa-envelope"></i><a onclick="abrirMapaWeb()">Mapa web</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-md-4 col-sm-4 footer-contacto">
+                    <h5>Contacto</h5>
+                    <ul>
+                        <li class="d_f"><i class="fa fa-map-marker"></i>Dirección: <b>Calle Álava Nª7 . Madrid,
+                            España.</b>
+                        </li>
+                        <li class="d_f"><i class="fa fa-phone"></i>Telf: <b>+34 916528382</b></li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+            <hr>
+            <div class="row copyright">
+                <p id="parrafo_footer">
+                    <b>Página Web diseñada por: </b>Raúl Marín Montes <b>TABLE GAMES.
+                </b>. Bajo la licencia <b>GPL</b>
+                </p>
+                <div id="logos_footer" class="col-md-4 col-md-4 col-sm-4 footer-logotipos">
+                    <a href="https://es-es.facebook.com/"><img class="ll_ff" src="img/facebook.png"
+                                                               alt="Logo del pie de la página."></a>
+                    <a href="https://www.google.com/gmail/"><img class="ll_ff" src="img/google-plus.png"
+                                                                 alt="Logo del pie de la página."></a>
+                    <a href="https://twitter.com/?lang=es"><img class="ll_ff" src="img/twitter.png"
+                                                                alt="Logo del pie de la página."></a>
+                    <a href="https://www.youtube.com/?hl=es&gl=ES"><img class="ll_ff" src="img/youtube.png"
+                                                                        alt="Logo del pie de la página."></a>
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+
+</div>
+
+<!-- ===========================
+SCRIPTS NECESARIOS
+=========================== -->
+<script src="libs/jquery/jquery.min.js"></script>
+<script src="libs/bootstrap/bootstrap.min.js"></script>
+<script src="libs/underscore.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="ajax/loginValidacion.js"></script>
+<script src="js/licencia.js"></script>
+<script src="js/mapaWeb.js"></script>
+<script src="js/navbar.js"></script>
+<script src="js/politica_Cokiees.js"></script>
+<script src="ajax/tienda.js"></script>
+<script src="js/carro.js"></script>
+<script src="ajax/carrito.js"></script>
+<script>
+    new WOW().init();
+</script>
+
+<script>
+
+    $('.dropdown-toggle').click(function () {
+        $(this).next('.dropdown-menu').slideToggle(200);
+    });
+</script>
+
+</body>
+</html>

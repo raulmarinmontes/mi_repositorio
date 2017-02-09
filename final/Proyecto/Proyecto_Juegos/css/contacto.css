@@ -1,0 +1,135 @@
+/*
+ *    Autor = Raul Marin
+ *    Fecha = 
+ *    Licencia = GPL v3
+ *    Versión = 1.0
+ *    Descripción = Definiciones CSS
+ *
+ *    Copyright (C) 2016 TABLE GAMES
+ *
+ *    This program is free software: you can redistribute it and/or modify
+ *    it under the terms of the GNU General Public License as published by
+ *    the Free Software Foundation, either version 3 of the License, or
+ *    (at your option) any later version.
+ *
+ *    This program is distributed in the hope that it will be useful,
+ *    but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *    GNU General Public License for more details.
+ *
+ *    You should have received a copy of the GNU General Public License
+ *    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+/* --------------------- 
+ESTILOS CONTENIDO - FORMULARIO DE CONTACTO
+--------------------- */
+.container-contact {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.form-contacto {
+    color: #363636;
+    text-align: center;
+    background-color: #F5F5F5;
+    border: 1px solid #d9d9d9;
+}
+
+.form-contacto h4 {
+    margin-bottom: 20px;
+}
+
+.padding-form {
+    padding-left: 0px;
+}
+
+.derecha-form {
+    text-align: right;
+}
+
+.izquierda-form {
+    text-align: left;
+}
+
+.enviar-form {
+    border-radius: 4px;
+    border: none;
+    background: none;
+    color: white;
+    background-color: #FFA200;
+    padding: 10px;
+}
+
+.enviar-form:hover {
+    background-color: #3275bd;
+    border: none;
+}
+
+.form-control-feedback {
+    right: 15px;
+}
+
+.form-group {
+    margin-bottom: 0px;
+    margin-top: 30px;
+}
+
+.intro {
+    padding-bottom: 70px;
+}
+
+.intro h2,
+.intro p {
+    text-align: center;
+}
+
+#condicion {
+    color: #FFA200;
+
+}
+
+/* ---------------------
+ESTILOS CONTENIDO - FORMULARIO DE CONTACTO ENVIADO CORRECTAMENTE
+--------------------- */
+.centrar {
+    margin-top: 250px;
+}
+
+/* ---------------------
+ESTILOS CONTENIDO - MAPA
+--------------------- */
+.map {
+    margin-top: 80px;
+    min-height: 600px;
+    width: 100%;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.59);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.59);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.59);
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 990px) {
+    .map {
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+
+@media only screen and (max-width: 990px) {
+    .derecha-form {
+        text-align: left;
+    }
+
+    .form-contacto {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+    .map {
+        min-height: 400px;
+    }
+}
